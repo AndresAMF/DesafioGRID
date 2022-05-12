@@ -1,0 +1,134 @@
+body,
+p,
+h2,
+h4,
+h3 {
+    margin: 0%;
+    padding: 0%;
+}
+
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 85%;
+    grid-template-areas:
+        'h h '
+        'n m '
+        'f f ';
+}
+
+
+.header {
+    grid-area: h;
+    height: 10vh;
+    text-align: center;
+    line-height: 10vh;
+    background-color: rgb(97, 97, 97);
+    color: white;
+    font-size: 2em;
+}
+
+
+.navbar {
+    grid-area: n;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: rgb(156, 156, 156);
+}
+
+.navtittle {
+    padding-bottom: 1em;
+}
+
+.navitem {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0.25em;
+    height: 5vh;
+}
+
+.navitem a {
+    text-decoration: none;
+    color: black;
+}
+
+.navitem a:hover {
+    color: white;
+}
+
+.navitem p {
+    opacity: 50%;
+    padding-left: 0.25em;
+}
+
+
+.main {
+    grid-area: m;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5em;
+    padding: 0.5em;
+    background-color: rgb(156, 156, 156);
+}
+
+.product {
+
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(191, 191, 191);
+}
+
+.productImg {
+    width: 50vh;
+    height: 25vh;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product p {
+    text-align: center;
+    padding: 0.5em 0em 0.5em 0em;
+}
+
+.product h4 {
+    padding-bottom: 0.5em;
+}
+
+button {
+    width: 100%;
+    height: 3em;
+    background-color: rgb(68, 70, 196);
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(70, 150, 220);
+}
+
+
+.footer {
+    grid-area: f;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    background-color: rgb(97, 97, 97);
+    color: white;
+}
+
